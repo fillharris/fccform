@@ -1,0 +1,32 @@
+body {
+    color: gray;
+    margin: 0;
+    background-image: url(../images/coding.jpg);
+    background-color: transparent;
+}
+.container {
+    background-color: palegreen;
+    opacity: 90%;  
+    width: 900px;  
+    margin: auto;
+}
+
+option {
+    color: gray;
+}
+
+select {
+    color: gray;
+}
+
+.title {
+    text-align: center;
+    color: gray;
+}
+.info {
+    color: gray;
+}
+
+button {
+    margin-bottom: 15PX;
+}

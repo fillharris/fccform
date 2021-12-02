@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>freeCodeCamp Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title" id="title">Coding Bootcamp Registration</h1>
+      <section id=>
+        <p class="info" id="description">
+          <em
+            >Thank you for showing your interest in our program. Please complete
+            the form below and a bootcamp representative will be contacting you
+            ASAP. Have your payment method available!
+          </em>
+        </p>
+      </section>
+      <form action="/form" id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          /><br /><br />
+          <label for="email" id="email-label">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          /><br /><br />
+          <label for="number" id="number-label">Age</label><br />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Enter Your Age"
+            value=""
+            min="18"
+            max="85"
+            required
+          /><br /><br />
+          <label for="status" id="dropdown">Employment Status</label><br />
+          <select name="status" id="dropdown" required>
+            <option value="Status">Please Select Employment Status</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Unemployed">Unemployed</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <p>How soon would you like to start?</p>
+          <input type="radio" name="start" id="1mon" value="1mon" />
+          <label for="1mon">1 month</label><br />
+          <input type="radio" name="start" id="3mon" value="3mon" />
+          <label for="3mon">3 months</label><br />
+          <input type="radio" name="start" id="6+mon" value="6+mon" />
+          <label for="6+mon">6+ months</label><br /><br />
+        </div>
+        <div>
+          <p>
+            What are you interested in?
+            <em>(you can select more than one...)</em>
+          </p>
+          <input type="checkbox" name="full" id="full" value="full" />
+          <label for="full">Full-stack</label><br />
+          <input
+            type="checkbox"
+            name="frontend"
+            id="frontend"
+            value="frontend"
+          />
+          <label for="frontend">Frontend</label><br />
+          <input type="checkbox" name="backend" id="backend" value="backend" />
+          <label for="backend">Backend</label><br /><br />
+        </div>
+        <div>
+          <label for="textarea">Any comments or suggestions?</label><br />
+          <textarea
+            name="textarea"
+            id="textarez"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comments or suggestions here..."
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <button id="submit">Register!</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
